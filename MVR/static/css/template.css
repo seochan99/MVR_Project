@@ -230,7 +230,6 @@ img.img-full-width {
 #nino-header {
 	position: relative;
 	font-family: 'Montserrat', sans-serif;
-	background: url(../images/bg-header.jpg) no-repeat center center / cover;
 }
 #nino-header:after {
 	content: "";
@@ -305,7 +304,7 @@ img.img-full-width {
 }
 /* =============== LAYOUT - MENU AREA =============== */
 #nino-navbar {
-	background: none;
+	background: rgb(99, 97, 97);
 	border: none;
 	border-radius: 0;
 }
@@ -315,7 +314,7 @@ img.img-full-width {
 	font-size: 20px;
 }
 #nino-navbar .navbar-nav > li > a {
-	color: #fff;
+	color: rgb(255, 255, 255);
 	font-weight: 500;
 	text-transform: uppercase;
 	border-bottom: 3px solid transparent;
@@ -345,7 +344,7 @@ img.img-full-width {
 	background: none;
 }
 #nino-navbar .navbar-toggle .icon-bar {
-	background: #fff;
+	background: rgb(99, 97, 97);
 }
 /* ----------- FIXED NAVBAR WITH ANIMATE ----------- */
 .nino-fixed-nav #nino-navbar {
@@ -353,7 +352,7 @@ img.img-full-width {
 	top: 0;
 	left: 0;
     width: 100%;
-    background: rgba(241, 114, 114, 0.96);
+    background: rgb(99, 97, 97);
     z-index: 2;
     -webkit-animation-duration: .5s;
     		animation-duration: .5s;
@@ -446,7 +445,7 @@ section {
 	font-size: 30px;
 }
 /* =============== SECTION COUNTING =============== */
-#nino-counting {
+/* #nino-counting {
 	padding: 0;
 	background: #95e1d3;
 	font-family: 'Montserrat', sans-serif;
@@ -468,7 +467,7 @@ section {
 	font-weight: 700;
 	line-height: 100%;
 	margin-bottom: 10px;
-}
+} */
 /* =============== SECTION SERVICES =============== */
 #nino-services .nino-icon {
 	font-size: 30px;

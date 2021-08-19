@@ -11,88 +11,84 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="homepage.html">Mogo</a>
+                    <a class="navbar-brand" href="homepage.html">POPCOKE</a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="nino-menuItem pull-right">
                     <div class="collapse navbar-collapse pull-left" id="nino-navbar-collapse">
                         <ul class="nav navbar-nav">
                             <li class="active"><a href="#nino-header">Home <span class="sr-only">(current)</span></a></li>
-                            <li><a href="#nino-story">About</a></li>
-                            <li><a href="#nino-services">Service</a></li>
-                            <li><a href="#nino-ourTeam">Our Team</a></li>
-                            <li><a href="#nino-latestBlog">Blog</a></li>
+                            <li><a href="#nino-story">Review</a></li>
+                            <li><a href="#nino-services">Movie</a></li>
                             {%if user.is_authenticated%}
-                            <li class="nav-item"><a href="{% url 'mypage:mypage' request.user.id %}" class="nav-link">마이페이지</a></li>
-                            <li class="nav-item"><a href="{%url 'account_logout'%}" class="nav-link">로그아웃</a></li>
+                            <li class="nav-item"><a href="{% url 'mypage:mypage' request.user.id %}" class="nav-link">mypage</a></li>
+                            <li class="nav-item"><a href="{%url 'account_logout'%}" class="nav-link">signout</a></li>
                             {% else %}
-                            <li class="nav-item cta"><a href="{%url 'account_login'%}" class="nav-link">로그인</a></li>
-                            <li class="nav-item cta"><a href="{%url 'account_signup'%}" class="nav-link">회원가입</a></li>
+                            <li class="nav-item cta"><a href="{%url 'account_login'%}" class="nav-link">login</a></li>
+                            <li class="nav-item cta"><a href="{%url 'account_signup'%}" class="nav-link">signup</a></li>
                             {% endif %}
                         </ul>
                     </div><!-- /.navbar-collapse -->
                     <ul class="nino-iconsGroup nav navbar-nav">
-                        <li><a href="#"><i class="mdi mdi-cart-outline nino-icon"></i></a></li>
                         <li><a href="#" class="nino-search"><i class="mdi mdi-magnify nino-icon"></i></a></li>
                     </ul>
                 </div>
             </div><!-- /.container-fluid -->
         </nav>
 
-        <section id="nino-slider" class="carousel slide container" data-ride="carousel" >
+        <section id="nino-slider" class="carousel slide container" data-ride="carousel" style="background-color: rgb(99, 97, 97);">
             
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
                     <h2 class="nino-sectionHeading">
-                        <span class="nino-subHeading">Creative Reivew</span>
-                        PoP Cok! <br> Movie Review
+                        <!-- <span class="nino-subHeading"></span> -->
+                        PoP Coke!<br>Movie Review
                     </h2>
                     <a href="#" class="nino-btn">Learn more</a>
                 </div>
                 <div class="item">
                     <h2 class="nino-sectionHeading">
-                        <span class="nino-subHeading">Creative Template</span>
-                        Welcome <br>to MoGo
+                        <!-- <span class="nino-subHeading"></span> -->
+                        Today's<br>Review
                     </h2>
-                    <a href="#" class="nino-btn">Learn more</a>
+                    <a href="#" class="nino-btn">See more</a>
                 </div>
                 <div class="item">
                     <h2 class="nino-sectionHeading">
-                        <span class="nino-subHeading">Creative Template</span>
-                        Welcome <br>to MoGo
+                        <!-- <span class="nino-subHeading"></span> -->
+                        Today's<br>Movie
                     </h2>
-                    <a href="#" class="nino-btn">Learn more</a>
+                    <a href="#" class="nino-btn">Watch</a>
                 </div>
                 <div class="item">
                     <h2 class="nino-sectionHeading">
-                        <span class="nino-subHeading">Creative Template</span>
-                        Welcome <br>to MoGo
+                        <!-- <span class="nino-subHeading"></span> -->
+                        MyPage
                     </h2>
-                    <a href="#" class="nino-btn">Learn more</a>
+                    <a href="#" class="nino-btn">MyPage</a>
                 </div>
             </div>
-
             <!-- Indicators -->
             <ol class="carousel-indicators clearfix">
                 <li data-target="#nino-slider" data-slide-to="0" class="active">
                     <div class="inner">
-                        <span class="number">01</span> intro	
+                        <span class="number">01</span> Welcome
                     </div>
                 </li>
                 <li data-target="#nino-slider" data-slide-to="1">
                     <div class="inner">
-                        <span class="number">02</span> work
+                        <span class="number">02</span> Review
                     </div>
                 </li>
                 <li data-target="#nino-slider" data-slide-to="2">
                     <div class="inner">
-                        <span class="number">03</span> about
+                        <span class="number">03</span> Movie
                     </div>
                 </li>
                 <li data-target="#nino-slider" data-slide-to="3">
                     <div class="inner">
-                        <span class="number">04</span> contacts
+                        <span class="number">04</span> Mypage
                     </div>
                 </li>
             </ol>
