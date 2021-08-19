@@ -165,7 +165,7 @@ img.img-full-width {
 	color: #fff;
 }
 .bg-white {
-	background-color: #fff !important;
+	background-color: rgb(255, 255, 255) !important;
 }
 /* =============== HOVER EFFECT =============== */
 .nino-hoverEffect {
