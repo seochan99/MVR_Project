@@ -21,8 +21,14 @@
                             <li><a href="#nino-story">About</a></li>
                             <li><a href="#nino-services">Service</a></li>
                             <li><a href="#nino-ourTeam">Our Team</a></li>
-                            <li><a href="#nino-portfolio">Work</a></li>
                             <li><a href="#nino-latestBlog">Blog</a></li>
+                            {%if user.is_authenticated%}
+                            <li class="nav-item"><a href="{% url 'mypage:mypage' request.user.id %}" class="nav-link">마이페이지</a></li>
+                            <li class="nav-item"><a href="{%url 'account_logout'%}" class="nav-link">로그아웃</a></li>
+                            {% else %}
+                            <li class="nav-item cta"><a href="{%url 'account_login'%}" class="nav-link">로그인</a></li>
+                            <li class="nav-item cta"><a href="{%url 'account_signup'%}" class="nav-link">회원가입</a></li>
+                            {% endif %}
                         </ul>
                     </div><!-- /.navbar-collapse -->
                     <ul class="nino-iconsGroup nav navbar-nav">
@@ -33,7 +39,7 @@
             </div><!-- /.container-fluid -->
         </nav>
 
-        <section id="nino-slider" class="carousel slide container" data-ride="carousel">
+        <section id="nino-slider" class="carousel slide container" data-ride="carousel" >
             
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
