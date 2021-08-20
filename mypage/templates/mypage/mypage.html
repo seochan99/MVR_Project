@@ -45,7 +45,8 @@
       {% if request.user.profile in user.profile.followers.all %}
           <a href="{%url 'mypage:follow' user.id %}" style="color: rgb(90, 89, 89);"><button type="button" class="btn btn-outline-info">언팔로우</button></a>
       {% else %}
-        <a href="{%url 'mypage:follow' user.id %} " style="color: rgb(90, 89, 89);" ><button type="button" class="btn btn-info">팔로우</button></a> {% endif %}
+        <a href="{%url 'mypage:follow' user.id %} " style="color: rgb(90, 89, 89);" ><button type="button" class="btn btn-info">팔로우</button></a>
+      {% endif %}
     {% endif %}
     {% if request.user == user %}
     <h1>&nbsp;&nbsp;&nbsp;&nbsp;</h1>
@@ -66,7 +67,7 @@
           {% endfor %}
         </div>
         {% if request.user == user %}
-        <a href="{% url 'mypage:profile_update' %}"><button type="button" class="btn btn-default" style="background-color:rgba(194, 180, 255, 0.774); color: whitesmoke; margin-top: 30px;">프로필 편집</button></a></h2></a>
+        <a href="{% url 'mypage:profile_update' %}"><button type="button" class="btn btn-default" style="background-color:rgba(148, 148, 148, 0.774); color: whitesmoke; margin-top: 30px;">프로필 편집</button></a></h2></a>
       {% endif %}
   </div>
 </div>
