@@ -14,7 +14,7 @@ html, body {
 }
 body {
 	color: #999;
-	font-size: 13px;
+	font-size: 15px;
 	font-weight: 400;
 	overflow-x: hidden;
 	position: relative;
@@ -562,7 +562,7 @@ section {
 /* =============== SECTION TESTIMONIAL =============== */
 .nino-testimonial {
 	background: #f8f8f8;
-	padding: 60px 0;
+	padding-bottom: 45px;
 }
 .nino-testimonial .unslider-arrow {
 	font-size: 40px;
@@ -994,7 +994,7 @@ footer .nino-copyright {
 	display: none;
 	cursor: pointer;
 	z-index: 2;
-	background: #E74C3C url(../images/go-to-top.png) center center no-repeat;
+	background: rgb(99, 97, 97) url(../images/go-to-top.png) center center no-repeat;
 }
 #nino-scrollToTop:hover {
 	text-decoration: none;
@@ -1036,7 +1036,7 @@ div.pp_default .pp_social {
 	}	
 	/* =============== SECTION TESTIMONIAL =============== */
 	.nino-testimonial {
-		padding: 30px 0;
+		padding-bottom: 45px 0;
 	}
 	.nino-testimonialSlider .quote {
 		font-size: 13px;
