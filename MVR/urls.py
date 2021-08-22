@@ -10,4 +10,5 @@ urlpatterns = [
     path('',views.showmain, name="showmain"),
     path('accounts/',include('allauth.urls')),
     path('mypage/',include('mypage.urls')),
+    path('review',views.showmovie, name="showmovie")
 ]
